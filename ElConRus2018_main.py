@@ -57,7 +57,7 @@ if __name__ == '__main__':
     # Cleanning up the directories
     CreateOrClear(ImageDir, False)
     print'\n#############################################################################'
-    print'                            Parallel Robot                                     '
+    print'                Solving systems of nonlinear inequalities                      '
     print'#############################################################################\n'
     print'                              Figure 1a                                        '
     # Get the workspace
@@ -108,7 +108,7 @@ if __name__ == '__main__':
     pbar.start()
     rows = []
     rows.append(['     ', 'An approach without simplification','The proposed approach with simplified system'])
-    rows.append(['Delta', 'Number of Iterations'              ,'Number of Iterations'])
+    rows.append(['Delta', '       Number of Iterations'        ,'          Number of Iterations'])
     for i, d in enumerate(Table1_deltas):
         wos = GetSolution_woS( d, rhomin = 8.0, rhomax = 12.0, \
                                thetamin = pi/16.0, thetamax = pi - pi/16.0, \
