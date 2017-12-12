@@ -12,7 +12,7 @@ from scipy import optimize
 # This script finds the extrema for a box by using interval analysis
 # (getPhi function)
 
-class Phi(object):
+class Phiws(object):
     def __init__(self, rhomin, rhomax, thetamin, thetamax):
         # Initialize the parameters of the planar parallel robot
         self.__rho = [rhomin, rhomax]
