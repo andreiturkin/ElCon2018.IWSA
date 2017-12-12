@@ -145,8 +145,8 @@ class CoveringTree(object):
             if bExit:
                 # Uncomment if you would like to get information on the processed levels
                 # and iterations
-                print 'Number of levels were processed: {}'.format(curLevel)
-                print 'Number of iterations: {}'.format(nIter)
+                # print 'Number of levels were processed: {}'.format(curLevel)
+                # print 'Number of iterations: {}'.format(nIter)
                 self.__nLevelsProcessed = curLevel
                 self.__nIterations = nIter
                 if self.__bShow:
