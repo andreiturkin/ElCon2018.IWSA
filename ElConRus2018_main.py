@@ -110,10 +110,10 @@ if __name__ == '__main__':
     rows.append(['     ', 'An approach without simplification','The proposed approach with simplified system'])
     rows.append(['Delta', 'Number of Iterations'              ,'Number of Iterations'])
     for i, d in enumerate(Table1_deltas):
-        wos = GetSolution_woS( 0.05, rhomin = 8.0, rhomax = 12.0, \
+        wos = GetSolution_woS( d, rhomin = 8.0, rhomax = 12.0, \
                                thetamin = pi/16.0, thetamax = pi - pi/16.0, \
                                fig = None, ShowRes=False)
-        ws = GetSolution_wS( 0.05, rhomin = 8.0, rhomax = 12.0, \
+        ws = GetSolution_wS( d, rhomin = 8.0, rhomax = 12.0, \
                              thetamin = pi/16.0, thetamax = pi - pi/16.0, \
                              fig = None, ShowRes=False)
         rows.append([ wos[0], wos[1], ws[1] ])
