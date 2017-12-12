@@ -33,8 +33,8 @@ def GetSolution_woS(iDelta, rhomin, rhomax, thetamin, thetamax, fig, ShowRes=Fal
 
 def GetSolution_wS(iDelta, rhomin, rhomax, thetamin, thetamax, fig, ShowRes=False):
     # Define a system of inequalities that is approached by using interval analysis
-    # without simplification
-    System = IAwoS(iDelta, rhomin, rhomax, thetamin, thetamax, ShowCovPrc=False)
+    # with simplification
+    System = IAwS(iDelta, rhomin, rhomax, thetamin, thetamax, ShowCovPrc=False)
     maxLevels = 64
     System.getSolution(maxLevels)
 
